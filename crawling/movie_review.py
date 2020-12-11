@@ -10,7 +10,7 @@ base_url = 'https://movie.naver.com/movie/point/af/list.nhn?&page={}'
 
 fp = open('review.tsv', 'w', encoding='utf-8', newline='\n')
 
-for page in range(1, 101): # 1페이지부터 101페이지까지 보기
+for page in range(1, 101): # 1페이지부터 100페이지까지 보기
     url = base_url.format(page)
     res = requests.get(url)
     if res.status_code == 200:
