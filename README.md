@@ -1,8 +1,9 @@
-# Classify movie review as positive or negative
+# 영화 리뷰 감성 분석하기 (positive | negative)
 
-1. Corpus collection (data crawling)
-   - I made code for text crawling
-   - I did labeling with sample dataset
-2. Corpus cleaning with regular expression
-3. Corpus labeling
-4. Corpus tokenization
+> Text classification project
+
+1. 크롤링을 통해 데이터를 수집하기
+   - 영화 리뷰 크롤러 코드 짜기
+   - 레이블링 하기
+2. 정규식으로 코퍼스 정제하기
+   - 전각문자 제거하기 -> 옛날 뉴스, 일본어, 중국어 크롤링 한 후 사용하면 좋다.
