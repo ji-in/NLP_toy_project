@@ -31,14 +31,16 @@ if __name__ == "__main__":
     for line in sys.stdin: # sys.stdin : 입력받을 때 사용
         if line.strip() != "":
             columns = line.strip().split('\t')
-            print(columns)
             for r in regexs:
-                columns[target_index] = re.sub(r'%s' % r[0], r[1], columns[target_index].strip())
+                columns[target_index] = re.sub(r'%s' %r[0], r[1], columns[target_index].strip())
                 # strip() : 문자열 양쪽 끝에 공백 제거
+                # sub는 치환을 뜻하는 'substitution'의 줄임말
                 # re.sub('패턴', '바꿀 문자열', '문자열', 바꿀 횟수)
                 # 바꿀 횟수를 넣으면 지정된 횟수만큼 바꾸며, 바꿀 횟수를 생략하면 찾은 문자열을 모두 바꾼다.
                 # re.sub(전각문자, 반각문자, 문자열) -> 문자열에서 전각문자를 반각문자로 바꾸기
 
             sys.stdout.write('\t'.join(columns) + "\n")
+            # join : 문자열 붙이기
+            # columns[0] \t columns[1]
         else:
             sys.stdout.write('\n')
