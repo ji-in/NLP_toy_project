@@ -1,3 +1,15 @@
+# Implementation
+
+```python
+$ python refine.py refine.regex.txt 1 < review.tsv > review.refined.tsv
+```
+
+
+
+------
+
+틈새 공부
+
 # Redirect
 
 리다이렉트는 콘솔의 명령줄에서 `>` 혹은 `<` 를 사용한다.
