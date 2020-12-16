@@ -6,21 +6,13 @@ $ python refine.py refine.regex.txt 1 < review.tsv > review.refined.tsv
 
 # 정규식
 
-```
-(/+)
-```
+`(/+)`
 
-```
-[ㄱ-ㅎㅏ-ㅣ]
-```
+`[ㄱ-ㅎㅏ-ㅣ]`
 
-```
-~+
-```
+`~+`
 
-```
-♡+
-```
+`♡+`
 
 ------
 
