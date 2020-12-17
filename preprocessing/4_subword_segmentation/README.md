@@ -6,7 +6,7 @@
 
 Subword segmentation 을 위해 
 
-[깃헙주소]: https://github.com/kh-kim/subword-nmt.git
+[https://github.com/kh-kim/subword-nmt.git]: 깃헙주소
 
 에서 코드를 클론받아 사용했다.
 
