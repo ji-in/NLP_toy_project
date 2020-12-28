@@ -4,9 +4,7 @@
 
 단어보다 더 작은 의미 단위로 분절한다.
 
-Subword segmentation 을 위해 
-
-[Here]: https://github.com/kh-kim/subword-nmt.git
+Subword segmentation 을 위해 [여기](https://github.com/kh-kim/subword-nmt.git)
 
 에서 코드를 클론받아 사용했다.
 
