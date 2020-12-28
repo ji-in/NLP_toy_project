@@ -6,7 +6,7 @@
 
 Subword segmentation 을 위해 
 
-[https://github.com/kh-kim/subword-nmt.git]: 깃헙주소
+[Here]: https://github.com/kh-kim/subword-nmt.git
 
 에서 코드를 클론받아 사용했다.
 
@@ -42,3 +42,8 @@ $ python ./subword-nmt/apply_bpe.py --codes ./model < review.refined.regex.tsv.p
 $ python cut_label.py 0 < review.refined.regex.tsv > review.refined.regex.tsv.label
 ```
 
+6. label과 review.refined.regex.tsv.post.bpe 파일을 하나로 합친다.
+
+```python
+$ python merge.py review.refined.regex.tsv.label.txt review.refined.regex.tsv.post.bpe > final.txt
+```

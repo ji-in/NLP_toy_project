@@ -7,11 +7,13 @@ if __name__ == "__main__":
 
     label_fp = open(label, 'r', encoding='utf-8')
     data_fp = open(data, 'r', encoding='utf-8')
-    
-    
-    
-    for line in sys.stdin:
-        if line.strip() != "":
-            columns = line.strip().split('\t')
 
-        sys.stdout.write(columns[target_index] + "\n")
+    label_lines = label_fp.readlines()
+    data_lines = data_fp.readlines()
+
+    label_fp.close()
+    data_fp.close()
+
+    for i in range(len(label_lines)):
+        line = label_lines[i].rstrip('\n') + '\t' + data_lines[i]
+        sys.stdout.write(line + "\n")
