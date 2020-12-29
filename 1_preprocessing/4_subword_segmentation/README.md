@@ -4,6 +4,7 @@
 
 단어보다 더 작은 의미 단위로 분절한다.
 
+<<<<<<< HEAD:1_preprocessing/4_subword_segmentation/README.md
 Subword segmentation 을 위해 [여기](https://github.com/kh-kim/subword-nmt.git)에서 클론받아 사용했다.
 
 ------
@@ -12,6 +13,9 @@ Text classification에서 subword segmentation 이 필요할 줄 알고, 수행�
 
 ------
 
+=======
+Subword segmentation 을 위해 [여기](https://github.com/kh-kim/subword-nmt.git)
+>>>>>>> 852904501adf350a672567cc24c1881e566e5ca2:preprocessing/4_subword_segmentation/README.md
 
 
 ### Implementation
@@ -46,4 +50,12 @@ $ python ./subword-nmt/apply_bpe.py --codes ./model < review.refined.regex.tsv.p
 $ python cut_label.py 0 < review.refined.regex.tsv > review.refined.regex.tsv.label
 ```
 
+<<<<<<< HEAD:1_preprocessing/4_subword_segmentation/README.md
 6. review.refined.regex.tsv.post 와 review.refined.regex.tsv.label 을 합친다.
+=======
+6. label과 review.refined.regex.tsv.post.bpe 파일을 하나로 합친다.
+
+```python
+$ python merge.py review.refined.regex.tsv.label.txt review.refined.regex.tsv.post.bpe > final.txt
+```
+>>>>>>> 852904501adf350a672567cc24c1881e566e5ca2:preprocessing/4_subword_segmentation/README.md
