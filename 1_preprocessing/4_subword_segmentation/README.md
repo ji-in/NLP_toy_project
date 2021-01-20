@@ -26,7 +26,7 @@ $ python tokenize.py 1 < review.refined.regex.tsv > review.refined.regex.tsv.txt
 2. review.refined.regex.tsv.txt 파일에서 토큰화 되어있는 부분 앞뒤로 '_'를 붙인다.
 
 ```
-$ python post_tokenize.py review.refined.regex.tsv.txt < review.refined.regex.tsv.txt > review.regined.regex.tsv.post
+$ python post_tokenize.py review.refined.regex.tsv.txt < review.refined.regex.tsv.txt > review.refined.regex.tsv.post
 ```
 
 3. 2에서 후처리 한 파일을 사용하여 bpe 모델을 학습한다.
